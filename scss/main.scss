@@ -35,175 +35,284 @@
   'themes/default';
 
 
-  // variables
+// variables
+$masterWidth: 324.57px;
+$largeImg: 31vw;
+$mediumImg: 30vw;
+$smallImg: 45vw;
+$smallestImg: 80vw;
+
+// $fullScreen: 1300px;
+$lapScreen: 1047px;
+$tabScreen: 767px;
+$phoneScreen: 500px;
 
 
 
-  $ylwBtn:#ffcb07;
+$ylwBtn:#ffcb07;
 
 
-  //
+//
 
-  body {
-    border: 0;
-    margin: 0;
-    width: 100vw;
-    background-color: white;
+.page-content {
+  max-width: 1047px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body {
+  border: 0;
+  margin: 0;
+  width: 100vw;
+  background-color: white;
+}
+
+.container {
+  width: 100vw;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  max-width: none;
+  flex-direction: column;
+}
+
+.nav {
+  display: flex;
+  height: 196.52px;
+  max-width: 767px;
+  width: 100vw;
+  background-color: white;
+  // align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.logo {
+  width: 140px;
+  align-self: center;
+}
+
+.nav-btn {
+  margin: 15px 30px;
+  background-color: white;
+  letter-spacing: 1px;
+  font-weight: 600;
+  border: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-self: center;
+}
+
+.buttons-two {
+  display: none;
+}
+
+.tab-btn {
+  display: none;
+  margin: 15px 30px;
+  background-color: white;
+  letter-spacing: 1px;
+  font-weight: 600;
+  border: 0;
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 5px;
+
+}
+
+button {
+  margin: 0;
+  padding: 15px;
+  font-family: arial;
+  letter-spacing: .5px;
+  font: {
+    size: 12px;
+    weight: bold;
+  }
+}
+
+.hero {
+  display: flex;
+  width: 100vw;
+  height: 49.47vw;
+  background-image: url("../img/wide-bknd.jpg");
+  background-size: 100vw auto;
+  justify-content: flex-end;
+  margin-bottom: 2.5em;
+}
+
+.hero-links {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.ourspaces,
+.letstalk,
+.ourproducts {
+  width: $masterWidth;
+  height: $masterWidth;
+  margin-bottom: 5em;
+}
+.product {
+  width: $masterWidth;
+  height: $masterWidth;
+}
+
+.articles {
+  display: flex;
+  width: $masterWidth;
+  height: auto;
+  flex-direction: column;
+  margin-bottom: 2.5em;
+  h1 {
+  margin: 5px auto;
+  font-size: 16px;
+  font-weight: normal;
+  }
+  p {
+  margin: 0 auto;
+  color: grey;
+  letter-spacing: .1em;
+  font-size: 14px;
+  font-weight: lighter;
+  }
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  h2 {
+    margin: 0 auto;
+    color: grey;
+    font-size: 22px;
+    font-weight: normal;
+    text-align: center;
+    padding-bottom: 2.5em;
+    padding-right: 1em;
   }
 
-  .container {
-    width: 100vw;
-    border: 0;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    max-width: none;
-    flex-direction: column;
-  }
+}
 
-  .nav {
-    display: flex;
-    height: 196.52px;
-    width: 100vw;
-    background-color: white;
-    // align-items: center;
-    flex-direction: row;
-    justify-content: space-between;
-  }
+#coffee-designs {
+  width: 100vw;
+  max-width: 550px;
+  max-height: 312.56px;
+  margin-bottom: -1.5em;
+}
 
-  .logo {
-    width: 140px;
-    align-self: center;
-  }
+.sub-footer {
+  display: flex;
+  margin-top: 90px;
+  margin-bottom: 60px;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
 
-  .nav-btn {
-    margin: 15px 30px;
-    background-color: white;
-    letter-spacing: 1px;
-    font-weight: 600;
-    border: 0;
-    display: flex;
-    justify-content: flex-start;
-    align-self: center;;
-  }
+#sub-foot {
+  width: 167px;
+  height: 83.5px;
+  align-self: center;
+}
 
-  button {
-    margin: 0;
-    padding: 15px;
-    font-family: arial;
-    letter-spacing: .5px;
-    font: {
-      size: 12px;
-      weight: bold;
-    }
-  }
+.shop {
+  margin: 15px 30px;
+  color: white;
+  background-color: #333333;
+  border-radius: 4px;
+  letter-spacing: 1px;
+  font-weight: normal;
+  font-size: 14px;
+  border: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-self: center;;
+}
 
-  .hero {
-    display: flex;
-    width: 100vw;
-    height: 49.47vw;
-    background-image: url("../img/wide-bknd.jpg");
-    background-size: 100vw auto;
-    justify-content: flex-end;
-    margin-bottom: 2.5em;
-  }
 
-  .hero-links {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
+//mixins
 
+@mixin sizing($size) {
   .ourspaces,
   .letstalk,
   .ourproducts {
-    width: 30vw;
-    height: 30vw;
-    margin-bottom: 5em;
+    width: $size;
+    height: $size;
   }
   .product {
-    width: 30vw;
-    height: 30vw;
+    width: $size;
+    height: $size;
   }
 
   .articles {
     display: flex;
-    width: 30vw;
-    height: auto;
-    flex-direction: column;
-    margin-bottom: 2.5em;
-    h1 {
-    margin: 5px auto;
-    font-size: 16px;
-    font-weight: normal;
-    }
-    p {
-    margin: 0 auto;
-    color: grey;
-    letter-spacing: .1em;
-    font-size: 14px;
-    font-weight: lighter;
-    }
+    width: $size;
   }
 
-  .footer {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    h2 {
-    margin: 0 auto;
-    color: grey;
-    font-size: 22px;
-    text-align: center;
-    padding-bottom: 2.5em;
+}
+
+
+
+
+
+  @media screen and (max-width:$lapScreen) and (min-width:$tabScreen) {
+    @include sizing($largeImg);
+
+  }
+
+  @media screen and (max-width:$tabScreen) and (min-width: $phoneScreen) {
+    @include sizing($largeImg);
+    .footer {
+      h2 {
+        font-size: 16px;
+        font-weight: normal;
+      }
+    }
+    .nav {
+      flex-direction: column;
     }
 
-  }
+    .nav-btn{
+      display: none;
+    }
 
-  #coffee-designs {
-    width: 550px;
-    height: 312.56px;
-    margin-bottom: -2em;
-  }
-
-  .sub-footer {
-    display: flex;
-    margin-top: 90px;
-    margin-bottom: 60px;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  #sub-foot {
-    width: 167px;
-    height: 83.5px;
-    align-self: center;
-  }
-
-  .shop {
-    margin: 15px 30px;
-    color: white;
-    background-color: #333333;
-    border-radius: 4px;
-    letter-spacing: 1px;
-    font-weight: normal;
-    font-size: 14px;
-    border: 0;
-    display: flex;
-    justify-content: flex-start;
-    align-self: center;;
-  }
-
-  @media screen and (max-width:$tabScreen) and (min-width:$phoneScreen) {
+    .buttons-two {
+      display: flex;
+      margin-top: -73px;
+      width: 100vw;
+      justify-content: space-around;
+    }
 
 
+    // .tab-btn {
+    //   display: contents;
+    // }
+
+    .logo {
+      margin: auto;
+    }
 
   }
+
+
 
   @media screen and (max-width:$phoneScreen) {
+
+    .footer {
+
+
+      h2 {
+        font-size: 16px;
+        font-weight: normal;
+      }
+    }
 
 
   }
