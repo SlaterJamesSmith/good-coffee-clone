@@ -621,14 +621,7 @@ button {
   background-image: url("../img/wide-bknd.jpg");
   background-size: 100vw auto;
   justify-content: flex-end;
-}
-
-.floater {
-  display: flex;
-  height: 350px;
-  width: 500px;
-  background-color: rgba(0, 0, 0, 0.5);
-  margin: 60px;
+  margin-bottom: 2.5em;
 }
 
 .info {
@@ -649,17 +642,15 @@ button {
   justify-content: space-between;
 }
 
+.ourspaces,
+.letstalk,
 .ourproducts {
   width: 30vw;
   height: 30vw;
+  margin-bottom: 5em;
 }
 
-.ourspaces {
-  width: 30vw;
-  height: 30vw;
-}
-
-.letstalk {
+.product {
   width: 30vw;
   height: 30vw;
 }
@@ -669,6 +660,7 @@ button {
   width: 30vw;
   height: auto;
   flex-direction: column;
+  margin-bottom: 2.5em;
 }
 .articles h1 {
   margin: 5px auto;
@@ -723,8 +715,52 @@ button {
 }
 
 .footer {
-  height: 300px;
-  background-color: black;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.footer h2 {
+  margin: 0 auto;
+  color: grey;
+  font-size: 22px;
+  text-align: center;
+  padding-bottom: 2.5em;
+}
+
+#coffee-designs {
+  width: 550px;
+  height: 312.56px;
+  margin-bottom: -2em;
+}
+
+.sub-footer {
+  display: flex;
+  margin-top: 90px;
+  margin-bottom: 60px;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+#sub-foot {
+  width: 167px;
+  height: 83.5px;
+  align-self: center;
+}
+
+.shop {
+  margin: 15px 30px;
+  color: white;
+  background-color: #333333;
+  border-radius: 4px;
+  letter-spacing: 1px;
+  font-weight: normal;
+  font-size: 14px;
+  border: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-self: center;
 }
 
 @media screen and (max-width: 1000px) and (min-width: 600px) {
