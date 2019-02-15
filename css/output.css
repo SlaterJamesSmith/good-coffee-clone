@@ -650,21 +650,37 @@ button {
 }
 
 .ourproducts {
-  background-color: #ef3f68;
-  height: 232px;
-  width: 232px;
+  width: 30vw;
+  height: 30vw;
 }
 
 .ourspaces {
-  background-color: #e0e31c;
-  height: 232px;
-  width: 232px;
+  width: 30vw;
+  height: 30vw;
 }
 
 .letstalk {
-  background-color: #48b4c4;
-  height: 232px;
-  width: 232px;
+  width: 30vw;
+  height: 30vw;
+}
+
+.articles {
+  display: flex;
+  width: 30vw;
+  height: auto;
+  flex-direction: column;
+}
+.articles h1 {
+  margin: 5px auto;
+  font-size: 16px;
+  font-weight: normal;
+}
+.articles p {
+  margin: 0 auto;
+  color: grey;
+  letter-spacing: 0.1em;
+  font-size: 14px;
+  font-weight: lighter;
 }
 
 .blockchain {
