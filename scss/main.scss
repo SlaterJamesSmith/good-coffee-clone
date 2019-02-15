@@ -1,0 +1,332 @@
+@charset 'UTF-8';
+
+// 1. Configuration and helpers
+@import
+  'abstracts/variables',
+  'abstracts/functions',
+  'abstracts/mixins';
+
+// 2. Vendors
+@import
+  'vendors/normalize';
+
+// 3. Base stuff
+@import
+  'base/base',
+  'base/fonts',
+  'base/typography',
+  'base/helpers';
+
+// 4. Layout-related sections
+@import
+  'layout/header',
+  'layout/footer';
+
+// 5. Components
+@import
+  'components/button';
+
+// 6. Page-specific styles
+@import
+  'pages/home';
+
+// 7. Themes
+@import
+  'themes/default';
+
+
+  // variables
+  $maxImg: 400px;
+  $largeImg: 21vw;
+  $mediumImg: 30vw;
+  $smallImg: 45vw;
+  $smallestImg: 80vw;
+
+  $fullScreen: 1900px;
+  $lapScreen: 1500px;
+  $tabScreen: 1000px;
+  $phoneScreen: 600px;
+
+
+
+  $ylwBtn:#ffcb07;
+
+
+  //
+
+  body {
+    border: 0;
+    margin: 0;
+    width: 100vw;
+    background-color: white;
+  }
+
+  .container {
+    width: 100vw;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    max-width: none;
+    flex-direction: column;
+  }
+
+  .nav {
+    display: flex;
+    height: 196.52px;
+    width: 100vw;
+    background-color: white;
+    // align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .logo {
+    width: 140px;
+    align-self: center;
+  }
+
+  .nav-btn {
+    margin: 15px 30px;
+    background-color: white;
+    letter-spacing: 1px;
+    font-weight: 600;
+    border: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-self: center;;
+  }
+
+  button {
+    margin: 0;
+    padding: 15px;
+    font-family: arial;
+    letter-spacing: .5px;
+    font: {
+      size: 12px;
+      weight: bold;
+    }
+  }
+
+  .b-yellow {
+    background-color: $ylwBtn;
+    border: 1px solid white;
+    transition: color .2s ease-in-out;
+    transition: background-color .2s ease-in-out;
+  }
+
+  .b-yellow:hover {
+    // transition-property: background-color, color;
+    transition-duration: .2s;
+    background-color: #2ba6cb;
+    color: white;
+  }
+
+  .b-black {
+    background-color: #231f20;
+    color: white;
+    border: 0;
+  }
+
+  .hero {
+    display: flex;
+    width: 100vw;
+    height: 49.47vw;
+    background-image: url("../img/wide-bknd.jpg");
+    background-size: 100vw auto;
+    justify-content: flex-end;
+  }
+
+  .floater {
+    display: flex;
+    height: 350px;
+    width: 500px;
+    // padding: 30px;
+    background-color: transparentize(black, .5);
+    // position:relative;
+    // justify-content: flex-end;
+    // margin-left: auto;
+    margin: 60px;
+
+  }
+
+
+  .info {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .rainbow {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .hero-links {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .ourproducts {
+    background-color: #ef3f68;
+    height: 232px;
+    width: 232px;
+  }
+
+  .ourspaces {
+    background-color: #e0e31c;
+    height: 232px;
+    width: 232px;
+  }
+
+  .letstalk {
+    background-color: #48b4c4;
+    height: 232px;
+    width: 232px;
+  }
+
+  .blockchain {
+    background-color: #ef3f68;
+    height: 220px;
+    width: 25vw;
+  }
+
+  .smart-cities {
+    background-color: #e0e31c;
+    height: 220px;
+    width: 25vw;
+  }
+
+  .health {
+    background-color: #48b4c4;
+    height: 220px;
+    width: 25vw;
+  }
+
+  .future {
+    background-color: #1aa477;
+    height: 220px;
+    width: 25vw;
+  }
+
+  .what {
+    height: 283px;
+    width: 50vw;
+    border-bottom: 1px solid #4d4d4d;
+    border-right: 1px solid #4d4d4d;
+    background-color: #0a0a0a;
+  }
+
+  .old {
+    height: 283px;
+    width: 50vw;
+    border-bottom: 1px solid #4d4d4d;
+    background-color: #241f20;
+  }
+
+  .footer {
+    height: 300px;
+    background-color: black;
+  }
+
+  @media screen and (max-width:$tabScreen) and (min-width:$phoneScreen) {
+
+    // .menue_buttons {
+    //   display: none;
+    // }
+
+
+    .blockchain {
+      width: 50vw;
+    }
+
+    .smart-cities {
+      width: 50vw;
+    }
+
+    .health {
+      width: 50vw;
+    }
+
+    .future {
+      width: 50vw;
+    }
+
+    .info {
+      flex-direction: column;
+    }
+
+    .what {
+      width: 100vw;
+      border-right: 0;
+    }
+
+    .old {
+      height: 283px;
+      width: 100vw;
+    }
+
+
+  }
+
+  @media screen and (max-width:$phoneScreen) {
+
+    .floater {
+      display: flex;
+      height: 245px;
+      width: 100vw;
+      // padding: 30px;
+      background-color: transparentize(black, .5);
+      margin: 0;
+
+    }
+
+    .menue_buttons {
+      display: none;
+    }
+
+    .rainbow {
+      flex-direction: column;
+    }
+
+    .blockchain {
+      width: 100vw;
+      height: 180px;
+    }
+
+    .smart-cities {
+      width: 100vw;
+      height: 180px;
+    }
+
+    .health {
+      width: 100vw;
+      height: 180px;
+    }
+
+    .future {
+      width: 100vw;
+      height: 180px;
+    }
+
+    .info {
+      flex-direction: column;
+    }
+
+    .what {
+      width: 100vw;
+      height: 252px;
+      border-right: 0;
+    }
+
+    .old {
+      width: 100vw;
+      height: 252px;
+    }
+
+    .footer {
+      height: 360px;
+    }
+  }
