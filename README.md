@@ -21,12 +21,12 @@ _A mock landing page modeled after the brand Good Coffee's webpage. Designed exp
 #### Original site:
 <img src="readme_imgs/orig-lg-top.png" width="100%">
 
-<img src="readme_imgs/orig-med-top.png" width="30%"><img src="readme_imgs/orig-sm-btm.png" width="30%">
+<img src="readme_imgs/orig-med-top.png" width="50%"><img src="readme_imgs/orig-sm-btm.png" width="50%">
 
 #### Cloned page:
 <img src="readme_imgs/new-lg-top.png" width="100%">
 
-<img src="readme_imgs/new-lg-btm.png" width="30%"><img src="readme_imgs/new-med-top.png" width="30%">
+<img src="readme_imgs/new-med-top.png" width="50%"><img src="readme_imgs/new-lg-btm.png" width="50%">
 
 
 ## Setup/Installation Requirements
