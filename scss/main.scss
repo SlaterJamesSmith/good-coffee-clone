@@ -305,9 +305,6 @@ button {
 
   }
 
-
-
-
   @media screen and (max-width:$phoneScreen) {
     @include navSizing;
     @include sizing(75vw);
@@ -325,6 +322,5 @@ button {
 
     .articles {
       margin-bottom: 2em;
-
     }
   }
