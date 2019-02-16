@@ -19,7 +19,7 @@ _A mock landing page modeled after the brand Good Coffee's webpage. Designed exp
 
 ## Comparison images
 #### Original site:
-<img src="readme_imgs/orig-lg-top.png" width="200">
+<img src="readme_imgs/orig-lg-top.png" width="50%">
 
 
 ## Setup/Installation Requirements
