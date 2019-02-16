@@ -17,6 +17,10 @@ _A mock landing page modeled after the brand Good Coffee's webpage. Designed exp
 | Between viewport widths of 767px and 500px, navigation bar menu will change styling to fit viewport, and text in footer will change to a smaller font size | User changes window width from 1000px to 700px | Top menu options change from 5 to 3 buttons, text at bottom of the screen becomes smaller |
 | Below viewport width of 500px, all content will stack in a column | User changes window width from 700px to 400px | Each block of content appears in its own line, filling the majority of the width of the page |
 
+## Comparison images
+#####Original site:
+<img src=="readme_imgs/orig-lg-top.png" width="200">
+
 
 ## Setup/Installation Requirements
 
